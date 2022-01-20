@@ -1,10 +1,20 @@
-
+import Header from './components/Header';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>Miaki Note Plus</h1>
+      <Header/>
+      <p>NotesList</p>
+      <p>NotesList</p>
+      <p>NotesList</p>
+      <p>NotesList</p>
+      <p>NotesList</p>
+      <p>NotesList</p>
+      <p>NotesList</p>
+      <p>NotesList</p>
+      <Footer/>
     </div>
   );
 }
