@@ -4,8 +4,8 @@ import logo from '../logo.png'
 
 const Footer = () => {
   return (
-    <div>
-        <img src= {logo} class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""/>
+    <div className='app-footer'>
+        <img src= {logo} />
     </div>
   )
 };
