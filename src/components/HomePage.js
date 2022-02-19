@@ -1,10 +1,10 @@
 import React, {useState, useEffect, useContext} from 'react'
 import AuthContext from '../utils/AuthContext'
-import { Link } from 'react-router-dom'
+
 
 const HomePage = () => {
     let [notes, setNotes] = useState([])
-    let { user, authTokens, logoutUser} = useContext(AuthContext)
+    let {authTokens, logoutUser} = useContext(AuthContext)
 
     useEffect(()=> {
         getNotes()
@@ -31,7 +31,7 @@ const HomePage = () => {
 
     return (
         <div>
-            <p>You are logged to the home page!</p>
+            <h3>All</h3>
 
 
             <ul>
@@ -40,11 +40,6 @@ const HomePage = () => {
                 ))}
             </ul>
 
-            {user ? (
-                 <button  onClick={logoutUser}>Logout</button>
-            ): (
-                <Link to="/login" >Login</Link>
-            )}   
 
         </div>
     )

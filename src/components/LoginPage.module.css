@@ -1,0 +1,22 @@
+.login {
+    margin: auto;
+    margin-top: 80px;
+    width: 50%;
+    border: 100px solid rgb(243, 242, 242);
+    padding: 2px 5px;
+    background-color: rgb(243, 242, 242);
+}
+.username {
+    text-align: center;
+    justify-content: space-between;
+}
+
+.password {
+    text-align: center;
+    justify-content: space-between;
+}
+
+.login_btn {
+    text-align: center;
+    justify-content: space-between;
+}
