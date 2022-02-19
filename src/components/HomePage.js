@@ -1,5 +1,6 @@
 import React, {useState, useEffect, useContext} from 'react'
 import AuthContext from '../utils/AuthContext'
+import Item from './Item'
 
 
 const HomePage = () => {
@@ -31,16 +32,9 @@ const HomePage = () => {
 
     return (
         <div>
-            <h3>All</h3>
-
-
-            <ul>
-                {notes.map(note => (
-                    <li key={note.id} >{note.body}</li>
-                ))}
-            </ul>
-
-
+            {notes.map((note, index) => (
+                <Item key={index} note={note}/>
+            ))}
         </div>
     )
 }
