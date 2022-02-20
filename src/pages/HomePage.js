@@ -1,6 +1,7 @@
 import React, {useState, useEffect, useContext} from 'react'
 import AuthContext from '../utils/AuthContext'
-import Item from './Item'
+import Item from '../components/Item'
+import classes from './HomePage.module.css'
 
 
 const HomePage = () => {
@@ -31,7 +32,11 @@ const HomePage = () => {
     }
 
     return (
-        <div>
+        <div className={classes.list}>
+            <div className={classes.addbtn}>
+                <button >Add note</button>
+            </div>
+
             {notes.map((note, index) => (
                 <Item key={index} note={note}/>
             ))}

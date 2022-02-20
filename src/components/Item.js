@@ -9,7 +9,7 @@ let getTime = (note) => {
 let getTags = (note) => {
 
     let tags = note.tag.map((tag, index) => {
-        return tag.tag_name + ' ';
+        return ' ' + tag.tag_name;
     })
     
     return tags
@@ -29,16 +29,18 @@ let getContent = (note) => {
 }
 
 
+
 const Item = ({ note }) => {
     return (
-        //<Link to={`/note/${note.id}`}>
-        <Card>
-            <div className="notes-list-item" >
-                <h3>{getTags(note)}</h3>
-                <p><span>{getTime(note)} </span>{getContent(note)}</p>
-            </div>
-        </Card>
-        //</Link>
+        <Link to={`/notes/${note.id}`} style={{ textDecoration: 'none' }}> 
+            <Card>
+                <div className="notes-list-item" >
+                    <h2>{'Tags: '+  getTags(note)}</h2>
+                    <h4>{getContent(note)}</h4>
+                    <p><span>{'Updated: '+ getTime(note)} </span></p>
+                </div>
+            </Card>
+        </Link>
     )
 }
 

@@ -1,0 +1,30 @@
+.note {
+    position: relative;
+}
+
+
+.tags {
+    margin-left: 6%;
+}
+
+.text {
+    width: 90%;
+    margin: auto;
+
+}
+
+.text textarea {
+    border: none;
+
+    width: 100%;
+    height: 20vh;
+    resize: none;
+    margin: auto;
+    
+}
+.save {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
