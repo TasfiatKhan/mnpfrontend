@@ -18,7 +18,7 @@ function App() {
           <Header/>
           <PrivateRoute component={HomePage} path="/" exact/>
           <PrivateRoute path="/notes/:id" component={NotePage} />
-          <Route component={LoginPage} path="/login"/>
+          <Route component={LoginPage} path="/login" />
           <Footer/>
         </AuthProvider>
       </Router>

@@ -2,7 +2,7 @@ import React, {useState, useEffect, useContext} from 'react'
 import AuthContext from '../utils/AuthContext'
 import Item from '../components/Item'
 import classes from './HomePage.module.css'
-
+import AddButton from '../components/AddButton'
 
 const HomePage = () => {
     let [notes, setNotes] = useState([])
@@ -33,8 +33,8 @@ const HomePage = () => {
 
     return (
         <div className={classes.list}>
-            <div className={classes.addbtn}>
-                <button >Add note</button>
+            <div>
+                <AddButton/>
             </div>
 
             {notes.map((note, index) => (
